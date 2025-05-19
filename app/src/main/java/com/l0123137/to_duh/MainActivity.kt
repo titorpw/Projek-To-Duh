@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             ToDuhTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "halo",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
