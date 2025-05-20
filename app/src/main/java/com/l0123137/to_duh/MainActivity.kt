@@ -21,7 +21,6 @@ class MainActivity : ComponentActivity() {
             ToDuhTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "halo",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,7 +30,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting(modifier: Modifier = Modifier) {
     Text(
         text = "Hello To-Duh!, Coba-Coba",
         modifier = modifier
@@ -42,6 +41,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     ToDuhTheme {
-        Greeting("Android")
+        Greeting()
     }
 }
